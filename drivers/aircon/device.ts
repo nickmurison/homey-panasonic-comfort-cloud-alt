@@ -84,6 +84,16 @@ export class MyDevice extends Homey.Device {
   }
 
   /**
+   * Method to collect all our action flow cards
+   */
+  async initActionCards() {
+    const changeAirSwingUD = this.homey.flow.getActionCard('change-air-swing-updown');
+    changeAirSwingUD.registerRunListener(async (args) => {
+      await this.postToService({ air_swing_ud: args.Direction });
+    });
+  }
+
+  /**
    * onInit is called when the device is initialized.
    */
   async onInit() {
@@ -113,6 +123,8 @@ export class MyDevice extends Homey.Device {
       else 
         throw e;
     }
+
+    await this.initActionCards();
 
     this.log("Device '"+this.id+"' has been initialized");
   }

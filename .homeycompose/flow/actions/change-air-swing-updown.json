@@ -1,0 +1,43 @@
+{
+  "title": {
+    "en": "Change the Up/Down Air Swing to"
+  },
+  "args": [
+    {
+      "type": "dropdown",
+      "name": "Direction",
+      "values": [
+        {
+          "id": "Up",
+          "label": {
+            "en": "Up"
+          }
+        },
+        {
+          "id": "UpMid",
+          "label": {
+            "en": "UpMid"
+          }
+        },
+        {
+          "id": "Mid",
+          "title": {
+            "en": "Mid"
+          }
+        },
+        {
+          "id": "DownMid",
+          "title": {
+            "en": "DownMid"
+          }
+        },
+        {
+          "id": "Down",
+          "title": {
+            "en": "Down"
+          }
+        }
+      ]
+    }
+  ]
+}
