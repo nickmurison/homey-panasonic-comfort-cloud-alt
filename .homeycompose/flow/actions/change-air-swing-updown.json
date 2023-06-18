@@ -1,11 +1,15 @@
 {
   "title": {
-    "en": "Change the Up/Down Air Swing to"
+    "en": "Change the Up/Down Air Swing"
+  },
+    "titleFormatted": {
+    "en": "Change the Up/Down Air Swing to [[direction]]"
   },
   "args": [
     {
       "type": "dropdown",
-      "name": "Direction",
+      "name": "direction",
+      "title": { "en": "Direction" },
       "values": [
         {
           "id": "Up",

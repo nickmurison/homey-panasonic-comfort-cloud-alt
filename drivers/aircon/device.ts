@@ -89,12 +89,12 @@ export class MyDevice extends Homey.Device {
   async initActionCards() {
     const changeAirSwingUD = this.homey.flow.getActionCard('change-air-swing-updown');
     changeAirSwingUD.registerRunListener(async (args) => {
-      await this.postToService({ air_swing_ud: args.Direction });
+      await this.postToService({ air_swing_ud: args.direction });
     });
 
     const changeAirSwingLR = this.homey.flow.getActionCard('change-air-swing-leftright');
     changeAirSwingLR.registerRunListener(async (args) => {
-      await this.postToService({ air_swing_lr: args.Direction });
+      await this.postToService({ air_swing_lr: args.direction });
     });
 
   }
