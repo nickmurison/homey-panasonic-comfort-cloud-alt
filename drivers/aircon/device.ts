@@ -106,6 +106,12 @@ export class MyDevice extends Homey.Device {
     changeFanSpeed.registerRunListener(async (args) => {
       await this.postToService({ fan_speed: args.speed });
     });
+
+    const changeEcoMode = this.homey.flow.getActionCard('change-eco-mode');
+    changeEcoMode.registerRunListener(async (args) => {
+      await this.postToService({ eco_mode: args.mode });
+    });
+
   }
 
   /**
