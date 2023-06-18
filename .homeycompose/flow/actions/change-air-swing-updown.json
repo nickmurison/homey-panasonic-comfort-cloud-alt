@@ -21,19 +21,19 @@
         },
         {
           "id": "Mid",
-          "title": {
+          "label": {
             "en": "Mid"
           }
         },
         {
           "id": "DownMid",
-          "title": {
+          "label": {
             "en": "DownMid"
           }
         },
         {
           "id": "Down",
-          "title": {
+          "label": {
             "en": "Down"
           }
         }
