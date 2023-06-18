@@ -1,0 +1,43 @@
+{
+  "title": {
+    "en": "Change the Left/Right Air Swing to"
+  },
+  "args": [
+    {
+      "type": "dropdown",
+      "name": "Direction",
+      "values": [
+        {
+          "id": "Left",
+          "label": {
+            "en": "Left"
+          }
+        },
+        {
+          "id": "LeftMid",
+          "label": {
+            "en": "LeftMid"
+          }
+        },
+        {
+          "id": "Mid",
+          "label": {
+            "en": "Mid"
+          }
+        },
+        {
+          "id": "RightMid",
+          "label": {
+            "en": "RightMid"
+          }
+        },
+        {
+          "id": "Right",
+          "label": {
+            "en": "Right"
+          }
+        }
+      ]
+    }
+  ]
+}
