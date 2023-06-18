@@ -97,6 +97,10 @@ export class MyDevice extends Homey.Device {
       await this.postToService({ air_swing_lr: args.direction });
     });
 
+    const changeOperationMode = this.homey.flow.getActionCard('change-operation-mode');
+    changeOperationMode.registerRunListener(async (args) => {
+      await this.postToService({ operation_mode: args.mode });
+    });
   }
 
   /**
